@@ -55,7 +55,7 @@ pipeline, df_processed = train_model() # Mengganti nama variabel 'model' menjadi
 
 # --- Antarmuka Streamlit ---
 st.set_page_config(page_title="Prediksi Gangguan Tidur", layout="wide")
-st.title("🩺 Aplikasi Prediksi Status Gangguan Tidur")
+st.title("Aplikasi Prediksi Status Gangguan Tidur")
 st.write("Aplikasi ini memprediksi apakah seseorang memiliki risiko gangguan tidur berdasarkan data kesehatan dan gaya hidup.")
 st.markdown("---")
 
@@ -129,7 +129,7 @@ if st.button("Prediksi Status Gangguan Tidur", type="primary"):
     except Exception as e:
         st.error(f"Terjadi kesalahan saat prediksi: {e}")
 
-st.markdown("""
----
-*Penafian: Prediksi ini didasarkan pada model machine learning dan tidak boleh dianggap sebagai pengganti nasihat medis profesional.*
-""")
+# st.markdown("""
+# ---
+# *Penafian: Prediksi ini didasarkan pada model machine learning dan tidak boleh dianggap sebagai pengganti nasihat medis profesional.*
+# """)
